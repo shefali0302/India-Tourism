@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndiaTourism</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header id="header">
+        <a href="#home" class="brand" id="brand-link">भारत</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <div class="navigation-items">
+                    <a href="#home" onclick="navigateToSection('home')">Home</a>
+                    <a href="#must-visit" onclick="navigateToSection('must-visit')">Destinations</a>
+                    <a href="#experience" onclick="navigateToSection('experience')">Expirience</a>
+                    <a href="#food">Food</a>
+                </div>
+            </div>
+        </div>
+    </header> 
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1 id="typing-heading"><span>भारत</span> में आपका स्वागत है।</h1>
+            <p>Welcome to India: A Land of Diversity and Rich Heritage<br>
+                Explore a land where ancient traditions blend seamlessly with modern marvels. From the majestic Himalayas in the north to the lush tropical forests in the south, India captivates visitors with its vastness and variety. As the seventh-largest country globally, India boasts a unique geographical identity, bordered by mountains and seas. Discover a tapestry of cultures, cuisines, and landscapes as you journey through our 32,87,263 sq. km expanse. From the bustling bazaars to sleek shopping malls, from historic monuments to luxurious heritage hotels, India offers a harmonious blend of old-world charm and contemporary elegance. Embark on a culinary adventure sampling diverse cuisines, delve into the depths of ancient faiths, immerse yourself in vibrant arts and crafts, and lose yourself in the melodies of traditional music. Whether you seek tranquility in the mountains, relaxation on sun-kissed beaches, or thrilling adventures in the desert, India promises an unforgettable experience for every traveler. Start your journey with us and uncover the treasures of this mesmerizing land. Welcome to India: Where the past meets the future, and every moment is a new discovery.</p>
+            
+            <!-- <a href="index1.html">Read More</a> -->
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section> 
+
+    <section class="popular">
+        <h1>Popular in India</h1>
+        <p>India, with its rich history, diverse cultures, and natural beauty, offers an unparalleled travel experience. Whether you seek historical exploration, spiritual enlightenment, adventure, or relaxation, India promises a journey of discovery and unforgettable memories.</p>
+        <div class="gallery">
+            <!-- Gallery Item 1: Taj Mahal -->
+            <div class="gallery-item">
+                <img src="tajmahal.jpg" alt="Taj Mahal">
+                <h3>Taj Mahal</h3>
+                <p>Agra, Uttar Pradesh</p>
+                <div class="description-box">
+                    <p>The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra.</p>
+                </div>
+            </div>
+    
+            <!-- Gallery Item 2: Hawa Mahal -->
+            <div class="gallery-item">
+                <img src="hawamahal.jpg" alt="Hawa Mahal">
+                <h3>Hawa Mahal</h3>
+                <p>Jaipur, Rajasthan</p>
+                <div class="description-box">
+                    <p>Hawa Mahal, also known as the Palace of Winds, is a palace in Jaipur, India, renowned for its unique architecture and windows.</p>
+                </div>
+            </div>
+    
+            <!-- Gallery Item 3: Puri Jagannath Temple -->
+            <div class="gallery-item">
+                <img src="puritemple.jpg" alt="Puri Jagannath Temple">
+                <h3>Puri Jagannath Temple</h3>
+                <p>Puri, Odisha</p>
+                <div class="description-box">
+                    <p>The Puri Jagannath Temple is a famous Hindu temple dedicated to Lord Jagannath in Puri, Odisha.</p>
+                </div>
+            </div>
+    
+            <!-- Gallery Item 4: Mysore Palace -->
+            <div class="gallery-item">
+                <img src="mysorepalace.jpg" alt="Mysore Palace">
+                <h3>Mysore Palace</h3>
+                <p>Mysore, Karnataka</p>
+                <div class="description-box">
+                    <p>The Mysore Palace, also known as the Amba Vilas Palace, is a historical palace and royal residence located in Mysore, Karnataka.</p>
+                </div>
+            </div>
+    
+            <!-- Gallery Item 5: Red Fort -->
+            <div class="gallery-item">
+                <img src="redfort.jpg" alt="Red Fort">
+                <h3>Red Fort</h3>
+                <p>New Delhi</p>
+                <div class="description-box">
+                    <p>The Red Fort is a historic fort in the city of Delhi in India. It was the main residence of the emperors of the Mughal dynasty for nearly 200 years, until 1857.</p>
+                </div>
+            </div>
+    
+            <!-- Gallery Item 6: Victoria Memorial -->
+            <div class="gallery-item">
+                <img src="victorial memorial.jpg" alt="Victoria Memorial">
+                <h3>Victoria Memorial</h3>
+                <p>Kolkata, West Bengal</p>
+                <div class="description-box">
+                    <p>The Victoria Memorial is a large marble building in Kolkata, West Bengal, dedicated to the memory of Queen Victoria. It is now a museum and popular tourist destination.</p>
+                </div>
+            </div>
+    
+            <!-- Repeat similar structure for Konark Sun Temple and Char Minar -->
+            <!-- Gallery Item 7: Konark Sun Temple -->
+            <div class="gallery-item">
+                <img src="konark.jpg" alt="Konark Sun Temple">
+                <h3>Konark Sun Temple</h3>
+                <p>Konark, Odisha</p>
+                <div class="description-box">
+                    <p>The Konark Sun Temple is a 13th-century Sun Temple at Konark in Odisha, India. It is believed to have been built by King Narasimhadeva I of Eastern Ganga Dynasty around 1250 CE.</p>
+                </div>
+            </div>
+    
+            <!-- Gallery Item 8: Char Minar -->
+            <div class="gallery-item">
+                <img src="charminar.jpg" alt="Char Minar">
+                <h3>Char Minar</h3>
+                <p>Hyderabad, Telangana</p>
+                <div class="description-box">
+                    <p>Char Minar is a historical monument and mosque located in Hyderabad, Telangana, India. It was built in 1591 by Muhammad Quli Qutb Shah, the fifth ruler of the Qutb Shahi dynasty.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="must-visit" id="must-visit">
+        <div class="must-visit-heading">
+            <h1>Must Visit Destinations</h1>
+            <p>India boasts a rich tapestry of must-visit destinations that offer diverse cultural, historical, and natural experiences. From the iconic Taj Mahal in Agra to the houseboats of Kerala, India's tourism highlights include-</p>
+        </div>
+    
+        <div class="must-visit-place">
+            <div class="slider">
+                <div class="must-visit-track">
+                    <div class="must-visit-place-item">
+                        <img src="coorg.jpg" alt="">
+                        <h3>Coorg</h3>
+                        <p>Known as the "Scotland of India," Coorg is famous for its coffee plantations, lush green landscapes, and picturesque hills. Tourists can enjoy scenic treks, waterfalls, and explore the rich cultural heritage.</p>
+                    </div>
+                    <div class="must-visit-place-item">
+                        <img src="dalhousie.avif" alt="">
+                        <h3>Dalhousie</h3>
+                        <p>A charming hill station nestled in the Himalayas, Dalhousie is renowned for its colonial architecture, panoramic views, and serene environment.</p>
+                    </div>
+                    <div class="must-visit-place-item">
+                        <img src="darjeeling.webp" alt="">
+                        <h3>Darjeeling</h3>
+                        <p>Famous for its tea gardens, Darjeeling offers stunning views of the Kanchenjunga range and the Darjeeling Himalayan Railway which is a UNESCO World Heritage Site.</p>
+                    </div>
+                    <div class="must-visit-place-item">
+                        <img src="manali.jpg" alt="">
+                        <h3>Manali</h3>
+                        <p>Manali is a popular destination for adventure enthusiasts and nature lovers. It offers activities like skiing, paragliding, and river rafting.</p>
+                    </div>
+                    <div class="must-visit-place-item">
+                        <img src="jogfallskarnataka.jpg" alt="">
+                        <h3>Jog Falls</h3>
+                        <p>Jog Falls is one of the highest plunge waterfalls in India. Located on the Sharavathi River, it offers breathtaking views, especially during the monsoon season.</p>
+                    </div>
+                    <div class="must-visit-place-item">
+                        <img src="kerala.jpg" alt="">
+                        <h3>Kerala</h3>
+                        <p>Known as "God's Own Country," Kerala is famous for its backwaters, beaches, lush greenery, houseboat cruises, tea gardens and the wildlife.</p>
+                    </div>
+                    <div class="must-visit-place-item">
+                        <img src="Kodikanal.webp" alt="">
+                        <h3>Kodaikanal</h3>
+                        <p>A popular hill station in the Western Ghats, Kodaikanal is known for its cool climate, misty hills, and beautiful lakes. It's a perfect getaway for nature walks and boating.</p>
+                    </div>
+                    <div class="must-visit-place-item">
+                        <img src="lehladakh.jpg" alt="">
+                        <h3>Leh-Ladakh</h3>
+                        <p>Leh Ladakh is a dream destination for many due to its stunning landscapes, high-altitude mountain passes, and vibrant culture. It's ideal for trekking, biking, and exploring Buddhist culture.</p>
+                    </div>
+                    <div class="must-visit-place-item">
+                        <img src="ooty.webp" alt="">
+                        <h3>Ooty</h3>
+                        <p>Often referred to as the "Queen of Hill Stations," Ooty is famous for its tea plantations, botanical gardens, and the Nilgiri Mountain Railway.</p>
+                    </div>
+                    <div class="must-visit-place-item">
+                        <img src="shillong.jpg" alt="">
+                        <h3>Shillong</h3>
+                        <p>Known as the "Scotland of the East," Shillong offers a blend of natural beauty and cultural heritage. The city's vibrant music scene and pleasant climate make it a favored destination.</p>
+                    </div>
+                    <!-- Duplicate items for continuous loop -->
+                    <div class="must-visit-place-item">
+                        <img src="coorg.jpg" alt="">
+                        <h3>Coorg</h3>
+                        <p>Known as the "Scotland of India," Coorg is famous for its coffee plantations, lush green landscapes, and picturesque hills. Tourists can enjoy scenic treks, waterfalls, and explore the rich cultural heritage.</p>
+                    </div>
+                    <div class="must-visit-place-item">
+                        <img src="dalhousie.avif" alt="">
+                        <h3>Dalhousie</h3>
+                        <p>A charming hill station nestled in the Himalayas, Dalhousie is renowned for its colonial architecture, panoramic views, and serene environment.</p>
+                    </div>
+                    <div class="must-visit-place-item">
+                        <img src="darjeeling.webp" alt="">
+                        <h3>Darjeeling</h3>
+                        <p>Famous for its tea gardens, Darjeeling offers stunning views of the Kanchenjunga range and the Darjeeling Himalayan Railway which is a UNESCO World Heritage Site.</p>
+                    </div>
+                    <div class="must-visit-place-item">
+                        <img src="manali.jpg" alt="">
+                        <h3>Manali</h3>
+                        <p>Manali is a popular destination for adventure enthusiasts and nature lovers. It offers activities like skiing, paragliding, and river rafting.</p>
+                    </div>
+                    <div class="must-visit-place-item">
+                        <img src="jogfallskarnataka.jpg" alt="">
+                        <h3>Jog Falls</h3>
+                        <p>Jog Falls is one of the highest plunge waterfalls in India. Located on the Sharavathi River, it offers breathtaking views, especially during the monsoon season.</p>
+                    </div>
+                    <div class="must-visit-place-item">
+                        <img src="kerala.jpg" alt="">
+                        <h3>Kerala</h3>
+                        <p>Known as "God's Own Country," Kerala is famous for its backwaters, beaches, lush greenery, houseboat cruises, tea gardens and the wildlife.</p>
+                    </div>
+                    <div class="must-visit-place-item">
+                        <img src="Kodikanal.webp" alt="">
+                        <h3>Kodaikanal</h3>
+                        <p>A popular hill station in the Western Ghats, Kodaikanal is known for its cool climate, misty hills, and beautiful lakes. It's a perfect getaway for nature walks and boating.</p>
+                    </div>
+                    <div class="must-visit-place-item">
+                        <img src="lehladakh.jpg" alt="">
+                        <h3>Leh-Ladakh</h3>
+                        <p>Leh Ladakh is a dream destination for many due to its stunning landscapes, high-altitude mountain passes, and vibrant culture. It's ideal for trekking, biking, and exploring Buddhist culture.</p>
+                    </div>
+                    <div class="must-visit-place-item">
+                        <img src="ooty.webp" alt="">
+                        <h3>Ooty</h3>
+                        <p>Often referred to as the "Queen of Hill Stations," Ooty is famous for its tea plantations, botanical gardens, and the Nilgiri Mountain Railway.</p>
+                    </div>
+                    <div class="must-visit-place-item">
+                        <img src="shillong.jpg" alt="">
+                        <h3>Shillong</h3>
+                        <p>Known as the "Scotland of the East," Shillong offers a blend of natural beauty and cultural heritage. The city's vibrant music scene and pleasant climate make it a favored destination.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="experience-heading">
+            <h1>Experiences</h1>
+            <p>Traveling across India promises an enriching experience that combines history, spirituality, adventure, cuisine, and cultural diversity, ensuring that every visitor finds something captivating and memorable.</p>
+        </div>
+
+        <div class="experience-content">
+            <div class="experience-content-menu">
+                <div class="menu-item active" data-category="Adventure"><p>Adventure</p></div>
+                <div class="menu-item" data-category="Nature"><p>Nature</p></div>
+                <div class="menu-item" data-category="Religious"><p>Religious</p></div>
+                <div class="menu-item" data-category="Historical"><p>Historical</p></div>
+                <div class="menu-item" data-category="Beaches"><p>Beaches</p></div>
+                <div class="menu-item" data-category="Sanctuary"><p>Wildlife</p></div>
+            </div>
+            <div class="experience-content-item">
+                <div class="Adventure exp">
+                    <div class="Adventure-item item">
+                        <img src="paraglidingbirbilling.webp" alt="">
+                        <h3>Paragliding in Bir Billing, Himachal Pradesh</h3>
+                    </div>
+                    <div class="Adventure-item item">
+                        <img src="scubadivingandaman.png" alt="">
+                        <h3>Scuba Diving in Andaman and Nicobar Islands</h3>
+                    </div>
+                    <div class="Adventure-item item">
+                        <img src="skiinggulmarg.webp" alt="">
+                        <h3>Skiing in Gulmarg, Kashmir</h3>
+                    </div>
+                    <div class="Adventure-item item">
+                        <img src="riverraftingrishikesh.cms" alt="">
+                        <h3>River Rafting in Rishikesh, Uttarakhand</h3>
+                    </div>
+                    <div class="Adventure-item item">
+                        <img src="Hotairballoonjaipur.jpg" alt="">
+                        <h3>Hot air Balloon in Jaipur, Rajasthan</h3>
+                    </div>
+                </div>
+                <div class="Nature exp">
+                    <div class="Nature-item item">
+                        <img src="runnofkutchgujurat.jpg" alt="">
+                        <h3>Runn Of Kutch, Gujurat</h3>
+                    </div>
+                    <div class="Nature-item item">
+                        <img src="solangvalleymanali.jpg" alt="">
+                        <h3>Solang Valley, Manali, Himachal Pradesh</h3>
+                    </div>
+                    <div class="Nature-item item">
+                        <img src="dallakekashmir.jpg" alt="">
+                        <h3>Dal Lake, Kashmir</h3>
+                    </div>
+                    <div class="Nature-item item">
+                        <img src="valeyofflowersuttarakhand.jpg" alt="">
+                        <h3>Valley of Flowers, Uttarakhand</h3>
+                    </div>
+                    <div class="Nature-item item">
+                        <img src="TeaGradenassam.jpg" alt="">
+                        <h3>Tea Plantations, Assam</h3>
+                    </div>
+                </div>
+                <div class="Religious exp">
+                    <div class="Religious-item item">
+                        <img src="akshardhamtemple.jpg" alt="">
+                        <h3>Akshardham Temple, New Delhi</h3>
+                    </div>
+                    <div class="Religious-item item">
+                        <img src="goldentemple.jpg" alt="">
+                        <h3>Golden Temple, Amritsar, Punjab</h3>
+                    </div>
+                    <div class="Religious-item item">
+                        <img src="shantistupa.jpg" alt="">
+                        <h3>Shanti Stupa, Manali, Himachal Pradesh</h3>
+                    </div>
+                    <div class="Religious-item item">
+                        <img src="jamamasjid.jpg" alt="">
+                        <h3>Jama Masjid, New Delhi</h3>
+                    </div>
+                    <div class="Religious-item item">
+                        <img src="church.jpg" alt="">
+                        <h3>Basilica of Bom Jesus, Goa</h3>
+                    </div>
+                </div>
+                <div class="Historical exp">
+                    <div class="Historical-item item">
+                        <img src="agrafort.jpg" alt="">
+                        <h3>Agra Fort, Agra</h3>
+                    </div>
+                    <div class="Historical-item item">
+                        <img src="ajantacaves.jpg" alt="">
+                        <h3>Ajanta Caves, Maharashtra</h3>
+                    </div>
+                    <div class="Historical-item item">
+                        <img src="gatewayodindia.jpg" alt="">
+                        <h3>Gateway Of India, Maharashtra</h3>
+                    </div>
+                    <div class="Historical-item item">
+                        <img src="mehrangarhfort.jpg" alt="">
+                        <h3>mehrangarh Fort, Jodhpur, Rajasthan</h3>
+                    </div>
+                    <div class="Historical-item item">
+                        <img src="qutubminar.jpg" alt="">
+                        <h3>Qutub Minar, New Delhi</h3>
+                    </div>
+                </div>
+                <div class="Beaches exp">
+                    <div class="Beaches-item item">
+                        <img src="kovalambeach.jpg" alt="">
+                        <h3>Kovallam Beach, Kovalam</h3>
+                    </div>
+                    <div class="Beaches-item item">
+                        <img src="puribeach.jpg" alt="">
+                        <h3>Puri Beach, Puri</h3>
+                    </div>
+                    <div class="Beaches-item item">
+                        <img src="varkalabeachkerala.jpg" alt="">
+                        <h3>Vrakala Beach, Kerala</h3>
+                    </div>
+                    <div class="Beaches-item item">
+                        <img src="calangutebeachgoa.jpg" alt="">
+                        <h3>Calungute Beach, Goa</h3>
+                    </div>
+                    <div class="Beaches-item item">
+                        <img src="elephantbeach.jpg" alt="">
+                        <h3>Elephant Beach, Andaman</h3>
+                    </div>
+                </div>
+                <div class="Sanctuary exp">
+                    <div class="Sanctuary-item item">
+                        <img src="bharatpurbirdsanctuary.jpg" alt="">
+                        <h3>Bharatpur Wildlife Sanctuary, Rajasthan</h3>
+                    </div>
+                    <div class="Sanctuary-item item">
+                        <img src="chilikalakebirdsanctuary.jpg" alt="">
+                        <h3>Chilika Bird Lake Sanctuary, Odisha</h3>
+                    </div>
+                    <div class="Sanctuary-item item">
+                        <img src="kaziranga.jpg" alt="">
+                        <h3>Kaziranga National Park, Assam</h3>
+                    </div>
+                    <div class="Sanctuary-item item">
+                        <img src="nandankananzoologicalpark.jpg" alt="">
+                        <h3>NandanKana Zoological Park, Odisha</h3>
+                    </div>
+                    <div class="Sanctuary-item item">
+                        <img src="simlipalnationalpark.jpg" alt="">
+                        <h3>Simlipal National Park, Odisha</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="food" id="food">
+        <div class="food-heading">
+            <h1>Food and Cuisine</h1>
+            <p>India's cuisine is as diverse as its culture, geography, and history, reflecting a unique blend of flavors, traditions, and regional specialties. Each state and region offers its own distinctive culinary style, shaped by local ingredients, climate, and cultural influences.</p>
+        </div>
+        <div class="food-grid">
+            <div class="food-item">
+                <img src="alooparatha.jpg" alt="Food Item 1">
+                <h3>Aloo Paratha</h3>
+            </div>
+            <div class="food-item">
+                <img src="bhejpuri.jpg" alt="Food Item 2">
+                <h3>Bhel Puri</h3>
+            </div>
+            <div class="food-item">
+                <img src="biryani.jpg" alt="Food Item 3">
+                <h3>Chicken Biryani</h3>
+            </div>
+            <div class="food-item">
+                <img src="chaat.jpg" alt="Food Item 4">
+                <h3>Chaat</h3>
+            </div>
+            <div class="food-item">
+                <img src="cholebhature.avif" alt="Food Item 5">
+                <h3>Chhole Bhature</h3>
+            </div>
+            <div class="food-item">
+                <img src="chowmein.jpeg" alt="Food Item 6">
+                <h3>Chowmein</h3>
+            </div>
+            <div class="food-item">
+                <img src="dosa.jpeg" alt="Food Item 7">
+                <h3>Dosa</h3>
+            </div>
+            <div class="food-item">
+                <img src="gujuratifood.jpeg" alt="Food Item 8">
+                <h3>Gujurati thali</h3>
+            </div>
+            <div class="food-item">
+                <img src="gulabjamun.jpeg" alt="Food Item 9">
+                <h3>Gulab Jamun</h3>
+            </div>
+            <div class="food-item">
+                <img src="idli.jpeg" alt="Food Item 10">
+                <h3>Idli</h3>
+            </div>
+            <div class="food-item">
+                <img src="jalebi.jpg" alt="Food Item 11">
+                <h3>Jalebi</h3>
+            </div>
+            <div class="food-item">
+                <img src="kulfi.webp" alt="Food Item 12">
+                <h3>Kulfi</h3>
+            </div>
+            <div class="food-item hidden">
+                <img src="laddu.jpg" alt="Food Item 13">
+                <h3>Laddoo</h3>
+            </div>
+            <div class="food-item hidden">
+                <img src="lassi.webp" alt="Food Item 14">
+                <h3>Lassi</h3>
+            </div>
+            <div class="food-item hidden">
+                <img src="momos.jpg" alt="Food Item 15">
+                <h3>Momos</h3>
+            </div>
+            <div class="food-item hidden">
+                <img src="muttoncurry.jpg" alt="Food Item 16">
+                <h3>Mutton Curry</h3>
+            </div>
+            <div class="food-item hidden">
+                <img src="pakora.jpg" alt="Food Item 17">
+                <h3>Pakode</h3>
+            </div>
+            <div class="food-item hidden">
+                <img src="paneer.jpeg" alt="Food Item 18">
+                <h3>Paneer</h3>
+            </div>
+            <div class="food-item hidden">
+                <img src="panipuri.jpg" alt="Food Item 19">
+                <h3>Pani Puri</h3>
+            </div>
+            <div class="food-item hidden">
+                <img src="pavbhaji.webp" alt="Food Item 20">
+                <h3>Pav Bhaji</h3>
+            </div>
+            <div class="food-item hidden">
+                <img src="rajmachawal.jpg" alt="Food Item 21">
+                <h3>Rajma Chawal</h3>
+            </div>
+            <div class="food-item hidden">
+                <img src="rasgulla.webp" alt="Food Item 22">
+                <h3>Rasgulla</h3>
+            </div>
+            <div class="food-item hidden">
+                <img src="samosa.jpeg" alt="Food Item 23">
+                <h3>Samosa</h3>
+            </div>
+            <div class="food-item hidden">
+                <img src="vadapav.jpg" alt="Food Item 24">
+                <h3>Vada Pav</h3>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="read-more-btn">Read More</button>
+            <button id="read-less-btn" class="hidden">Read Less</button>
+        </div>
+    </section>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+
+        //logo --> refresh
+        document.getElementById('brand-link').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            location.reload(); // Refresh the page
+        });
+
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+
+        function navigateToSection(sectionId) {
+            window.location.href = `#${sectionId}`;
+        }
+
+        const text = document.getElementById('typing-heading').innerText;
+        document.getElementById('typing-heading').innerText = '';
+        let i = 0;
+        function type() {
+            if (i < text.length) {
+                document.getElementById('typing-heading').innerHTML += text.charAt(i);
+                i++;
+                setTimeout(type, 120); // Adjust typing speed here 
+            } else {
+                i = 0; // Reset i to 0 to start typing again
+                document.getElementById('typing-heading').innerText = ''; // Clear the text
+                setTimeout(type, 1000); // Delay before restarting typing animation 
+            }
+        }
+        setTimeout(type, 1000); // Initial delay before starting typing (milliseconds)
+
+        // JavaScript for changing header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) { // Adjust scrollY value as needed
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const galleryItems = document.querySelectorAll(".gallery-item");
+
+            //for description in popular in india
+            galleryItems.forEach(function (item) {
+                item.addEventListener("click", function () {
+                    // Toggle active class on clicked item
+                    this.classList.toggle("active");
+
+                    // Close other description boxes
+                    galleryItems.forEach(function (otherItem) {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove("active");
+                        }
+                    });
+                });
+            });
+        });
+
+        
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const placeItems = document.querySelectorAll(".must-visit-place-item");
+
+            placeItems.forEach(function (item, index) {
+                item.style.animationDelay = `${index * 0}s`; // Delay each card's animation based on its index
+            });
+        });
+
+
+        // Read more read less buttons
+        document.addEventListener('DOMContentLoaded', () => {
+            const foodItems = document.querySelectorAll('.food-item');
+            const readMoreBtn = document.querySelector('#read-more-btn');
+            const readLessBtn = document.querySelector('#read-less-btn');
+
+            // Initially show only the first 12 food items
+            const initialDisplayCount = 12;
+
+            const updateVisibility = (showAll) => {
+                foodItems.forEach((item, index) => {
+                    if (showAll) {
+                        item.classList.remove('hidden');
+                    } else {
+                        if (index < initialDisplayCount) {
+                            item.classList.remove('hidden');
+                        } else {
+                            item.classList.add('hidden');
+                        }
+                    }
+                });
+
+                if (showAll) {
+                    readMoreBtn.classList.add('hidden');
+                    readLessBtn.classList.remove('hidden');
+                } else {
+                    readMoreBtn.classList.remove('hidden');
+                    readLessBtn.classList.add('hidden');
+                }
+            };
+
+            // Show initial items on page load
+            updateVisibility(false);
+
+            readMoreBtn.addEventListener('click', () => {
+                updateVisibility(true);
+            });
+
+            readLessBtn.addEventListener('click', () => {
+                updateVisibility(false);
+            });
+        });
+
+
+
+
+        $(document).ready(function(){
+            // Function to handle menu item click
+            $('.menu-item').on('click', function(){
+                var category = $(this).data('category'); // Get the category from the clicked menu item
+                
+                // Remove active class from all menu items
+                $('.menu-item').removeClass('active');
+                
+                // Add active class to the clicked menu item
+                $(this).addClass('active');
+                
+                // Hide all content items
+                $('.experience-content-item > div').hide();
+                
+                // Show content items of the selected category
+                $('.' + category).show();
+            });
+        
+            // Trigger click on the first menu item to display the first category by default
+            $('.menu-item.active').trigger('click');
+        });
+    </script>
+    
+</body>
+</html>

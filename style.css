@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+}
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+    background: linear-gradient(180deg, #e66465, #9198e5);
+}
+
+/*  =================================================== Header =================================================== */
+
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+    background: transparent;
+}
+
+header.scrolled {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+header .brand {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navigation {
+    position: relative;
+}
+
+header .navigation .navigation-items a {
+    position: relative;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a::before {
+    content: '';
+    position: absolute;
+    background: white;
+    width: 0;
+    height: 1.8px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover::before {
+    width: 100%;
+}
+
+section {
+    padding: 150px 200px;
+    background: #f8f8f8;
+    background: url("bg1.webp");
+    background-size: cover;
+}
+
+/*  =================================================== Home  =================================================== */
+
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home .content {
+    z-index: 888;
+    color: rgb(61, 16, 16);
+    font-weight: 500;
+    width: 70%;
+    border: 0.5px solid transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    /* Apply blur effect */
+    margin-top: 20px;
+    /* Adjust margin-top to reduce space */
+    margin-bottom: 50px;
+    /* Add margin-bottom for spacing */
+    padding: 20px;
+    /* Add padding to ensure content stays within the box */
+}
+
+.home .content h1 {
+    position: absolute;
+    /* Position the heading absolutely */
+    top: 0;
+    /* Align to the top of the content */
+    left: 0;
+    /* Align to the left of the content */
+    width: 100%;
+    /* Make sure it spans the width of the content */
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.home .content h1 span {
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.home .content p {
+    font-size: large;
+    margin-bottom: 65px;
+    position: relative;
+    /* Ensure paragraph has its own positioning context */
+    z-index: 1;
+    /* Ensure it appears above the heading */
+    padding-top: 120px;
+    /* Add top padding to make space for the heading */
+}
+
+.home .content a {
+    background: transparent;
+    padding: 15px 35px;
+    color: rgb(61, 16, 16);
+    border: 1px solid rgb(61, 16, 16);
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
+.home .media-icons {
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+}
+
+.home .media-icons a {
+    color: white;
+    font-size: 1.6em;
+}
+
+.home .media-icons a:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.home .media-icons a:hover {
+    transform: scale(1.3);
+}
+
+/*  =================================================== Popular ===================================================  */
+
+.popular {
+    padding: 50px 200px;
+    background: #f8f8f8;
+    /* Light background color */
+    text-align: center;
+}
+
+.popular h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #333;
+    /* Dark text color */
+    margin-bottom: 20px;
+}
+
+.popular p {
+    font-size: 1.2em;
+    color: #666;
+    /* Grey text color */
+    margin-bottom: 40px;
+}
+
+.popular .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Space between items */
+    justify-content: center;
+}
+
+.popular .gallery-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    /* Adjust the width as needed */
+    text-align: left;
+}
+
+.popular .gallery-item {
+    position: relative;
+    height: 374px;
+    width: 100%;
+}
+
+.popular .gallery-item .description-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 10;
+    overflow-y: auto;
+}
+
+.popular .gallery-item.active .description-box {
+    display: block;
+}
+
+
+.popular .gallery-item img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.popular .gallery-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 15px 5px;
+}
+
+.popular .gallery-item p {
+    font-size: 1em;
+    color: #666;
+    padding: 0 15px 15px;
+}
+
+.popular .gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* =================================================== Must visit =================================================== */
+
+.must-visit {
+    padding: 50px 200px;
+    background: #f8f8f8;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.must-visit .must-visit-heading h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.must-visit .must-visit-heading p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.must-visit .must-visit-place {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    top: 50px;
+    padding-bottom: 20px;
+}
+
+.must-visit .slider {
+    display: flex;
+    width: 100%;
+}
+
+.must-visit .must-visit-track {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 200%;
+    animation: slide 60s linear infinite;
+}
+
+.must-visit .must-visit-place-item {
+    background: white;
+    border-radius: 10px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    width: 300px;
+    text-align: left;
+    margin: 0 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.must-visit .must-visit-place-item img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.must-visit .must-visit-place-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 15px 5px;
+}
+
+.must-visit .must-visit-place-item p {
+    font-size: 1em;
+    color: #666;
+    padding: 0 15px 15px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.must-visit .must-visit-place-item:nth-child(1) {
+    animation: trail 20s infinite linear 0s;
+}
+
+.must-visit .must-visit-place-item:nth-child(2) {
+    animation: trail 20s infinite linear 2s;
+}
+
+.must-visit .must-visit-place-item:nth-child(3) {
+    animation: trail 20s infinite linear 4s;
+}
+
+.must-visit .must-visit-place-item:nth-child(4) {
+    animation: trail 20s infinite linear 8s;
+}
+
+.must-visit .must-visit-place-item:nth-child(5) {
+    animation: trail 20s infinite linear 20s;
+}
+
+.must-visit .must-visit-place-item:nth-child(6) {
+    animation: trail 20s infinite linear 15s;
+}
+
+.must-visit .must-visit-place-item:nth-child(7) {
+    animation: trail 20s infinite linear 20s;
+}
+
+.must-visit .must-visit-place-item:nth-child(8) {
+    animation: trail 20s infinite linear 25s;
+}
+
+.must-visit .must-visit-place-item:nth-child(9) {
+    animation: trail 20s infinite linear 30s;
+}
+
+.must-visit .must-visit-place-item:nth-child(10) {
+    animation: trail 20s infinite linear 35s;
+}
+
+/* =================================================== Experience =================================================== */
+
+.experience {
+    padding: 50px 200px;
+    background: #f8f8f8;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.experience .experience-heading h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.experience .experience-heading p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.experience .experience-content-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.experience .experience-content-menu .menu-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.experience .experience-content-menu .menu-item:hover{
+    background: #ffeed3;
+    border-radius: 8px;
+}
+
+.experience .experience-content-menu .menu-item.active {
+    background-color: #e1aa57;
+    color: white;
+    border-radius: 8px;
+}
+
+.experience .experience-content-item {
+    display: flex;
+    justify-content: space-between;
+    border: 10px;
+}
+
+.experience .experience-content-item.active {
+    display: flex;
+}
+
+.experience .experience-content-item .exp {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+
+.experience .experience-content-item>div {
+    flex: 1 0 30%;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.experience .experience-content-item .item {
+    width: 100%;
+    padding: 20px;
+    right: 20px;
+    left: 20px;
+}
+
+
+
+.experience .experience-content-item img {
+    flex: 0 0 70%;
+    width: 250px;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.experience .experience-content-item img:hover {
+    transform: scale(1.2); 
+}
+
+.experience .experience-content-item h3 {
+    flex: 0 0 30%;
+    font-size: 1em;
+    color: #666;
+    padding: 10px 15px 5px;
+}
+
+/* ============================================================ Food ============================================================*/
+
+.food {
+    padding: 50px 200px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.food .food-heading h1{
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.food .food-heading p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.food-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.food-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+.food-item h3 {
+    font-size: 1.2em;
+    color: #333;
+    padding: 15px;
+}
+
+.food-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 10px; 
+}
+
+.food-item {
+    background-color: #f0f0f0;
+    border: 1px solid none;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1040px) {
+    .popular {
+        padding: 50px 20px;
+    }
+
+    .popular .gallery {
+        gap: 10px;
+    }
+
+    .popular .gallery-item {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1040px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    section {
+        padding: 150px 20px;
+    }
+
+    .home .media-icons {
+        right: 15px;
+    }
+
+    header .navigation {
+        display: none;
+    }
+
+    header .navigation.active {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(1, 1, 1, 0.5);
+    }
+
+    header .navigation.active .navigation-items a {
+        color: #222;
+        font-size: 1.2em;
+        margin: 20px;
+    }
+
+    header .navigation .navigation-items a::before {
+        background: #222;
+        height: 5px;
+    }
+
+    header .navigation .navigation-items {
+        background: white;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    }
+
+    .menu-btn {
+        background: url("xmark-solid.svg")no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .menu-btn.active {
+        z-index: 999;
+        background: url(close.png)no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease;
+    }
+}
